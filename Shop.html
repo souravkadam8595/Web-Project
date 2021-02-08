@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MegaShop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+
+    }
+    .carousel-inner img {
+    width: 100%;
+    height: 100%;}
+    .panel-primary1 {
+        height:fit-content;
+        width: fit-content;
+    }
+    .containter1{border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+    }
+    input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+  </style>
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="container text-center">
+          <h1>MegaShop</h1>      
+          <p>Mission, Vission & Values</p>
+        </div>
+      </div>
+      
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">Logo</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="Index.html">Home</a></li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li><a href="The Blog.html">The Blog</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="About us.html">About Us</a></li>
+                <li><a href="Contact us.html">Contact Us</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="Log In.html"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+                <li><a href="Contact us.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+      <div class="container">    
+        <div class="row">
+            <div class="col-sm-3">
+                <p style="background-color:#DCDCDC;padding-top: 10px;padding-left: 10px;padding-bottom: 10px;align-self: center;">
+                    Mens Style
+                    <br>
+
+                </p>
+                <p>
+                    <ul>
+                        <li>Shirts</li>
+                        <li>Pants</li>
+                        <li>Jeans</li>
+                        <li>Tee shirts</li>
+                      </ul>
+                </p>
+                <br>
+                <p style="background-color:#DCDCDC;padding-top: 10px;padding-left: 10px;padding-bottom: 10px;align-self: center;">
+                    Shop By
+                    <br>
+
+                </p>
+                <p>Price</p>
+                $300-$350(1)<br>  
+                $300-$350(1)<br>  
+                $300-$350(1)<br>  
+                $300-$350(1)<br>  
+                $300-$350(1)<br>  
+
+                <p style="background-color:#DCDCDC;padding-top: 10px;padding-left: 10px;padding-bottom: 10px;align-self: center;">
+                    Compare Products
+                    <br>
+
+                </p>
+                <p>You Have No Items to Compare</p>
+                <p style="background-color:#DCDCDC;padding-top: 10px;padding-left: 10px;padding-bottom: 10px;align-self: center;">
+                    Community Poll
+                    <br>
+
+                </p>
+                <form action="/action_page.php"> <p>
+                    What is your Favourite Colour
+                </p>
+               
+                    <input type="radio" id="c1" value="Red">
+                    <label >Red</label><br>
+                    <input type="radio" id="c2" value="Black">
+                    <label >Black</label><br>
+                    <input type="radio" id="c3" value="Blue">
+                    <label >Blue</label><br>
+                    <input type="radio" id="c4" value="Green">
+                    <label >Green</label>
+                                    
+                    <br>  
+                    <input type="submit" value="Submit" style="align-content: flex-end;">
+                  </form>
+               
+                
+                
+            </div>
+            <div class="col-sm-9">
+            <div class="container1">
+                <img src="a.jpg" width="90%">
+                  
+                <br>
+<hr class="rounded">
+<p style="text-align:right">Sort By</p>
+<hr class="rounded">
+                Filter By:
+                <br>
+                <br>
+<div id="myBtnContainer" style="align-content: flex-end;">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+    <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+    <button class="btn" onclick="filterSelection('people')"> People</button>
+  </div>
+  
+  <!-- Portfolio Gallery Grid -->
+  <div class="row">
+    <div class="column nature">
+      <div class="content">
+        <img src="mountains.jpg" alt="Mountains" style="width:100%">
+        <h4>Mountains</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column nature">
+      <div class="content">
+      <img src="lights.jpg" alt="Lights" style="width:100%">
+        <h4>Lights</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column nature">
+      <div class="content">
+      <img src="nature.jpg" alt="Nature" style="width:100%">
+        <h4>Forest</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    
+    <div class="column cars">
+      <div class="content">
+        <img src="cars1.jpg" alt="Car" style="width:100%">
+        <h4>Retro</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column cars">
+      <div class="content">
+      <img src="cars2.jpg" alt="Car" style="width:100%">
+        <h4>Fast</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column cars">
+      <div class="content">
+      <img src="cars3.jpg" alt="Car" style="width:100%">
+        <h4>Classic</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+  
+    <div class="column people">
+      <div class="content">
+        <img src="people1.jpg" alt="Car" style="width:100%">
+        <h4>Girl</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column people">
+      <div class="content">
+      <img src="people2.jpg" alt="Car" style="width:100%">
+        <h4>Man</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column people">
+      <div class="content">
+      <img src="people3.jpg" alt="Car" style="width:100%">
+        <h4>Woman</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+  <!-- END GRID -->
+  </div>
+  
+  <!-- END MAIN -->
+  </div><br>
+            </div>
+
+            </div>
+        </div>
+      </div>
+
+      <footer class="container-fluid text-center">
+        <p>Online Store Copyright</p>  
+        <form class="form-inline">Get deals:
+          <input type="email" class="form-control" size="50" placeholder="Email Address">
+          <button type="button" class="btn btn-danger">Sign Up</button>
+        </form>
+      </footer>
+      <script>
+        filterSelection("all")
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("column");
+          if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+        
+        function w3AddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+          }
+        }
+        
+        function w3RemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            }
+          }
+          element.className = arr1.join(" ");
+        }
+        
+        
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+        </script>
+</body>
+</html>
